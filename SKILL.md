@@ -1,5 +1,10 @@
 ---
 name: gzh-deep-research
+version: 1.0.0
+display_name: 公众号深度研究一条龙
+display_name_en: GZH Deep Research Pipeline
+description_zh: 输入一个研究对象（产品/公司/概念/人物），先用横纵分析法联网深度研究并写出 1-3 万字叙事长文，再用主题组件库排版成可直接粘贴进微信公众号、样式不丢失的 HTML，可选 PDF 报告。研究、写作、排版一次完成。
+description_en: Give it a product, company, concept, or person. It runs Horizontal-Vertical Analysis deep research, writes a 10k-30k-character narrative long-form article, then typesets it into paste-proof WeChat Official Account HTML from a theme component library, with an optional PDF report. Research, writing, and typesetting in one run.
 description: 公众号深度研究一条龙 Skill（横纵分析法研究写作 + 公众号排版合并版）。先用横纵分析法（纵向追时间深度、横向追同期广度）联网深度研究一个产品/公司/概念/人物，写出一篇 1-3 万字、叙事驱动、敢下判断的公众号深度长文（Markdown），再用主题组件库排版成可直接粘贴进公众号编辑器、样式不丢失的 HTML（含一键复制预览页），并可按需附带排版精美的 PDF 报告。触发词：横纵分析+公众号、深度研究并排版、研究一下顺便发公众号、写篇深度文章并排版、帮我研究XX然后排成公众号文章、deep research 公众号。即使用户只说"帮我研究XX发公众号""把XX研究透写成推文"也应触发。不用于：纯名词解释、只排版不写作（用 gzh-design）、只研究不排版（用 hv-analysis）。
 ---
 
