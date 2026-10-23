@@ -34,6 +34,7 @@ description: 公众号深度研究一条龙 Skill（横纵分析法研究写作 
    - PDF 转换：Windows 用 `scripts/md_to_pdf_win.py`（Chrome/Edge 无头打印 + reportlab 页眉页码，依赖已装在 `C:\Users\Magnolias\.workbuddy\binaries\python\envs\default\Scripts\python.exe`）；Linux/macOS 用 `scripts/md_to_pdf.py`（WeasyPrint，需 `pip install weasyprint markdown`，Windows 上不可用，缺 GTK3）。
    - 排版校验：`scripts/validate_gzh_html.py`；预览页包装：`scripts/wrap_preview.py`；主题库 lint：`scripts/component_lint.py`；docx 抽取：`scripts/extract_docx.py`。
 2. **确认研究对象**：产品名/公司名/概念名/人名、类型、研究动机（可选）、特别关注点（可选）。用户给得明确就直接开始，不追问。
+3. **选题偏好（用户沉淀）**：推荐选题时不要给「太正常」的常规盘点（XX 发展史、XX 趋势解读这类已被写滥的角度）。优先反直觉、有冲突、有争议但可核实的角度： reversal 叙事（狂欢的另一面）、黑深残深挖（没人敢碰的产业链/机制暗面）、神转折（押注主流共识可能错误）。标题要有让人想点开争论或转发的钩子。
 3. **确认交付形态**：默认「Markdown 长文 + 公众号排版 HTML」；用户要 PDF 才跑 PDF 转换。可顺带确认主题偏好，否则到 Phase 2 再定。
 
 ---
@@ -118,7 +119,8 @@ prompt 用「获取」「调研」「了解」这类目标动词，不暗示具�
 ## 配图规范
 
 - 只用官方权威一手图，不用 AI 生成图。首选 arXiv 论文 HTML 版插图（`https://arxiv.org/html/<id>v<n>/`，从源码提取真实 `<img src=` 路径，旧论文试 ar5iv.labs.arxiv.org）；其次官网/官方博客截图（Chrome headless 截图后 PIL 裁剪，偏暗时用 ImageEnhance 提亮；截图写工作区被拒时先写 %TEMP% 再拷回）。
-- 优先方法架构图、成绩趋势图、对比图。每个主要章节至少一张，全文 10-15 张。下载后逐张目检，剔除错误页和小文件假图。
+- 优先方法架构图、成绩趋势图、对比图。每个主要章节至少一张，全文 10-15 张。下载后逐张目检，剔除错误页和小文件假图（被拦截的反爬页、Cloudflare block 页一律删除重找）。
+- **图片必须全文均匀分布**：前半部分（引子、纵向分析章节）同样要有图，禁止出现连续七八段纯文字无图的「文字墙」。arXiv 论文无 HTML 版或无合适插图时，用官网/官方博客截图补足装饰与总览性配图；后加的图插入前文时，全文图注顺序重新编号。
 - 题注：每张图下方单独一段斜体，格式 `*图 N｜内容解读（只看图注就能抓住该节要点）。来源：Figure 编号，arXiv:xxxx（或域名/URL）。*`，全文顺序编号，前缀精简不写「XX论文」。
 - Markdown 里图片独立成段、前后空行。
 
@@ -185,7 +187,7 @@ C:/Users/Magnolias/.workbuddy/binaries/python/envs/default/Scripts/python.exe [S
 - 通用库组件：代码块 1a/1b、行内 code 1c、图片 2a（有说明才加题注）、GIF 2b、小标题/金句/提示 3a-3e；主题库有等价语义组件优先用主题库版本。**代码块用「每行一个 `<p style="margin:0">`」，绝不用 `white-space:pre`；缩进只用全角空格 `　`。**
 - 一篇文章只用所选主题 + 通用库，不跨主题混用。
 - 强调与小标题用左竖条/药丸标签，不用四周虚线框（主题库明确定义的虚线组件除外）。
-- 章节自动编号 01/02/03…，末章结语用主题变体（如 ∞）；从 `##` 取前 3 个做导读看点（精选不是全量）；据中文章节标题生成英文标签（主题库有槽位时）。
+- 章节自动编号 01/02/03…，末章结语用主题变体（如 ∞）；导读看点默认不生成（见「用户排版偏好」第 7 条）；据中文章节标题生成英文标签（主题库有槽位时）。
 - 研究长文的「信息来源」「方法论说明」章节用主题库的附录/列表组件处理；图注沿用原文斜体题注，来源格式保持「来源：Figure N，arXiv:xxxx」。
 - 图片一律 `max-width:100%;height:auto;display:block;margin:0 auto`，不用 `width:100%`。
 - 中文全角标点，生成时直接写弯引号“”‘’；代码块/URL/英文专名内部保持半角原样。
@@ -198,6 +200,7 @@ C:/Users/Magnolias/.workbuddy/binaries/python/envs/default/Scripts/python.exe [S
 4. `###` 编号跟随 `##`（第一章下 1.1、1.2…），原文错位主动修正。
 5. 开头标题/引言卡下方居中一行小灰字「全文约 X 字 ｜ 阅读约需 X 分钟」（400 字/分钟估算）。
 6. 结尾不写「我是 XXX…点赞在看转发」签名区，文章到 END 分割线即止（用户明确要求署名时再按需加）。
+7. **默认不放「本文看点」导读卡**：引言卡下方直接进正文（用户明确要求导读时再生成，且只放精选 3 个看点）。
 
 ## 5. 校验合规（强制）
 
