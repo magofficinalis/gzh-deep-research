@@ -13,15 +13,15 @@
 
 以下为一次真实运行的产物节选：对「模型自进化（Self-Evolving AI）」做横纵分析研究后，用**石墨极简风**主题排版出的公众号文章（[在线查看完整页面](https://www.workbuddy.cn/space/d/TlgxosyrlGSRJQ84wHu1zm)）。
 
-| 开头：引言卡 + 章节编号 | 纵向分析：叙事 + arXiv 一手配图 |
+| 开头：引言卡 + 字数行 + 官方截图 | 纵向分析：叙事 + arXiv 一手配图 |
 | :---: | :---: |
-| ![开头与纵向分析](docs/images/shot_1.jpg) | ![横向分析与图表](docs/images/shot_2.jpg) |
+| ![开头与引言卡](docs/images/prev_p1.jpg) | ![纵向分析与论文配图](docs/images/prev_p2.jpg) |
 
-| 横向对比：竞品图谱 + 数据图 | 交汇洞察：三剧本推演 + 信息来源 |
+| 横向对比：技术路线 + 数据图表 | 结语与信息来源：附录清单 |
 | :---: | :---: |
-| ![图表与横向对比](docs/images/shot_3.jpg) | ![结尾与信息来源](docs/images/shot_4.jpg) |
+| ![横向对比与数据图](docs/images/prev_p3.jpg) | ![结语与信息来源](docs/images/prev_p4.jpg) |
 
-在线直链版本：[第 1 段](https://workbuddy-space-static.codebuddy.work/image/TZyMgucHgIraFUDH3sd06Q.jpg) ｜ [第 2 段](https://workbuddy-space-static.codebuddy.work/image/ukN27xjPTxUoosoJB4PsyS.jpg) ｜ [第 3 段](https://workbuddy-space-static.codebuddy.work/image/2Hqf9pVBOF74TUZDPpPuxG.jpg) ｜ [第 4 段](https://workbuddy-space-static.codebuddy.work/image/UqvORRghGLm9myTYAtElhw.jpg)
+在线直链版本：[开头](https://workbuddy-space-static.codebuddy.work/image/H2LUa38D8oJ4N0m6ubSNpw.jpg) ｜ [纵向分析](https://workbuddy-space-static.codebuddy.work/image/EROcqRTreVLFhcK9b1j2Wj.jpg) ｜ [横向对比](https://workbuddy-space-static.codebuddy.work/image/ve3MNApsMSrmsjpN9S9ibs.jpg) ｜ [结语与来源](https://workbuddy-space-static.codebuddy.work/image/U3u2PGHfBcUhEeS6Suq412.jpg)
 
 ## 它做什么
 
