@@ -4,6 +4,8 @@
 >
 > 输入一个研究对象（产品 / 公司 / 概念 / 人物），自动完成联网深度调研，写出一篇 1–3 万字、叙事驱动、敢下判断的深度长文，再排版成可直接粘贴进微信公众号编辑器、样式不丢失的 HTML。
 
+中文文档 | [English](README.en.md)
+
 这是两个成熟 Skill 的合并版：
 
 - **[hv-analysis](https://github.com/magofficinalis)** — 横纵分析法深度研究（方法论源自数字生命卡兹克 Khazix）
